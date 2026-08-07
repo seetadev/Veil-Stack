@@ -1,4 +1,4 @@
-# canteen.
+# Viel Stack
 
 A decentralized container orchestrating system (Kubernetes), running on Ethereum. 
 
@@ -23,33 +23,33 @@ As good as this may sound though, what are the disadvantages to employing a cont
 * A container orchestrator is heavy and requires a large number of computational resources.
 
 
-## Introducing canteen
+## Introducing Viel Stack
 
-canteen is an extremely scalable container orchestrator that is fault-tolerant, easy to install, easy to distribute, and most importantly decentralized through the utility of an Ethereum smart contract.
+Viel Stack is an extremely scalable container orchestrator that is fault-tolerant, easy to install, easy to distribute, and most importantly decentralized through the utility of an Ethereum smart contract.
 
-canteen efficiently schedules and orchestrates designated Docker containers to a set of servers based on speculated/provisioned container resource limits.
+Viel Stack efficiently schedules and orchestrates designated Docker containers to a set of servers based on speculated/provisioned container resource limits.
 
 ### presentation:
 https://docs.google.com/presentation/d/16UA1B5uPBWCZlvGwPWEaRGOn3Be_-StJ2hxTuyMRDkc/edit?usp=sharing
 
 
-## Installing canteen
+## Installing Viel Stack
 
-All you need to do to have canteen work with your tech stack is have your tech components in a Docker container uploaded on Docker Hub.
+All you need to do to have Viel Stack work with your tech stack is have your tech components in a Docker container uploaded on Docker Hub.
 
-Deploy the smart contract on whatever chain supports the Ethereum Virtual Machine, and edit the configuration of canteen's node file to point to the smart contract and chain.
+Deploy the smart contract on whatever chain supports the Ethereum Virtual Machine, and edit the configuration of Viel Stack's node file to point to the smart contract and chain.
 
-Run canteen's node on your set of servers and register your Docker images on the smart contract.
+Run Viel Stack's node on your set of servers and register your Docker images on the smart contract.
 
-canteen will then orchestrate your Docker containers based on all registered server node resource limitations and keep your entire tech stack fault tolerant and decentralized!
+Viel Stack will then orchestrate your Docker containers based on all registered server node resource limitations and keep your entire tech stack fault tolerant and decentralized!
 
-canteen can even replicate Docker containers to any amount of servers you choose should you wish to keep replicas of your database/web server/etc. on your cluster of servers.
+Viel Stack can even replicate Docker containers to any amount of servers you choose should you wish to keep replicas of your database/web server/etc. on your cluster of servers.
 
 ## Specifications
 
 Given that this was made for a 36-hour hackathon, we only implemented a priority-based Round-robin scheduling mechanism for choosing a set of servers to deploy a set of Docker images to.
 
-Each canteen node uses the SWIM protocol off-chain to determine the liveliness of all servers to efficiently schedule Docker containers to healthy servers. Should a server go down, images will be minimally rescheduled to ensure minimal product/service downtime.
+Each Viel Stack node uses the SWIM protocol off-chain to determine the liveliness of all servers to efficiently schedule Docker containers to healthy servers. Should a server go down, images will be minimally rescheduled to ensure minimal product/service downtime.
 
 ## Next Steps
 
